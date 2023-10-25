@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 50px;
+    background: pink;
+    justify-content: space-between;
+    align-items: center;
+    z-index: -100;
+    text-align: center;
+    
+}
+
+.recipebox {
+    position: relative;
+    top: 100px;
+    left: 500px;
+    text-align: inherit;    
+    
+}
