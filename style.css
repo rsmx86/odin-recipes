@@ -2,8 +2,7 @@
 
 *{
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    padding: 12;
     font-family: "Poppins", sans-serif;
 }
 
@@ -12,19 +11,123 @@
     top: 0;
     left: 0;
     width: 100%;
-    padding: 15px 50px;
+    padding: 10px 50px;
     background: pink;
     justify-content: space-between;
     align-items: center;
-    z-index: -100;
     text-align: center;
-    
+}
+
+#lethimcook{
+    position: sticky;
+
 }
 
 .recipebox {
     position: relative;
     top: 100px;
     left: 500px;
-    text-align: inherit;    
+    text-align: inherit;
+    color: rgb(143, 61, 214); 
+    text-decoration: none;
+           
+}
+
+#recipelistindex {
+    color: black;
+    position: sticky;
+}
+
+
+body {
+    background: url(imgs/gifmaker_me.gif);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: left;
+    background-position:25;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
     
 }
+
+.sizebutton {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+
+.return{
+    width: 20px;
+    height: 20px;
+    align-items: center;
+}
+
+.imgrecipelist{
+    width: 150px;
+    height: 150px;
+    padding: 1px;
+    margin: 2px;
+    border-style: double;
+    animation: slidetoright 1s ease-in;
+    
+}
+
+h2 {
+    transition: transform 0.3s ease 0s;
+}
+
+h2:hover {
+    transform: translateY(-5px);
+    transform: translateX(5px);
+}
+
+
+
+.slidetoright{
+    animation: slidetoright 6s ease-in;
+}
+
+/*h1:hover{
+    animation: slidetoleft 2s ease-out;
+}*/
+
+
+
+.fadediv{
+    animation: fadeIn 5s;
+    position: fixed;
+    text-align: center;
+}
+
+/* 
+Key Frame Section Start
+*/
+@keyframes slidetoleft {
+    from{
+        transform: translateX(200px);
+    }
+
+    to{
+        transform: translateX(0);
+    }
+}
+
+@keyframes slidetoright {
+    from{
+        transform: translateX(-200px);
+    }
+
+    to{
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100%{opacity: 1;}
+}
+
+/* 
+Key Frame Section End
+*/
