@@ -1,19 +1,28 @@
-# 🍳 Odin Recipes (Refactoring Phase)
+Here is the refactored README in English, tailored to match the minimalist and elegant aesthetic of your new project design.
 
-Este é um projeto prático desenvolvido como parte do currículo **The Odin Project**. O objetivo é construir um site de receitas simples para praticar a estruturação de HTML, caminhos de arquivos e estilização CSS.
+##🍳 Odin Recipes (Refactoring Phase)
+This is a practical project developed as part of The Odin Project curriculum. The core objective is to build a streamlined recipe website to master HTML structuring, file path management, and advanced CSS styling.
 
-> 🚧 **Status do Projeto:** Atualmente em processo de refatoração total para melhorar a organização das pastas e a qualidade do código.
+##🚧 Project Status: Currently undergoing a total refactor to enhance folder organization, minimalist UI/UX, and code quality.
 
----
+##🛠️ The Project
+The website features a minimalist landing page that acts as a curated index, leading to detailed, elegantly styled recipe pages.
 
-## 🛠️ O Projeto
+Core Structure:
 
-O site consiste em uma página principal que serve como índice, conectando-se a páginas detalhadas de receitas.
+Home Page: index.html featuring a hidden hamburger menu for a distraction-free experience.
 
-**Estrutura principal:**
-* **Página Inicial:** `index.html` com links para as receitas.
-* **Páginas de Receitas:** 3 receitas estruturadas com listas de ingredientes e passos de preparo.
-* **Estilização:** CSS externo para um layout limpo e responsivo.
+Recipe Pages: 3 curated recipes (Classic Lasagna, Chicken & Rice, and Perfect Boiled Eggs) structured with bilingual instructions and clean typography.
 
+Styling: External CSS focused on a "dark mode" aesthetic, using a near-black palette and high-end typography.
 
-<img width="1120" height="585" alt="image" src="https://github.com/user-attachments/assets/14066e09-c7ea-4f3f-b549-354235c6dc8d" />
+##🎨 Design Philosophy
+The refactored version moves away from traditional layouts toward a high-fashion, editorial aesthetic:
+
+Minimalism: Removal of unnecessary borders and shadows.
+
+Typography: Contrast between Serif (Playfair Display) and Sans-serif (Inter) fonts.
+
+Color Palette: Deep greys (#121212) and muted whites for a sophisticated look.
+
+<img width="1120" height="585" alt="Project Preview" src="https://github.com/user-attachments/assets/14066e09-c7ea-4f3f-b549-354235c6dc8d" />
