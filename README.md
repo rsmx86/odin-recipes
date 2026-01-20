@@ -14,3 +14,6 @@ O site consiste em uma página principal que serve como índice, conectando-se a
 * **Página Inicial:** `index.html` com links para as receitas.
 * **Páginas de Receitas:** 3 receitas estruturadas com listas de ingredientes e passos de preparo.
 * **Estilização:** CSS externo para um layout limpo e responsivo.
+
+
+<img width="1120" height="585" alt="image" src="https://github.com/user-attachments/assets/14066e09-c7ea-4f3f-b549-354235c6dc8d" />
