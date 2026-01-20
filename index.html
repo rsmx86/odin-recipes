@@ -2,19 +2,47 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Odin Recipes</title>
-    <link rel="stylesheet" href="style.css">
-    <meta name= "view-transition" content="same-origin" />
+    <title>ODIN | Essential</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-<body style="background-color: rgb(236, 207, 207);">
-    <header class="header">
-        <h1> <font color = #F07B0C> Odin</font> <font color= red> Recipes</font></h1>
-    </header>
- <div>
-        <a href="recipes.html" class="recipebox"><h2>Recipe Book</h2></a>
+<body>
 
-    </div>
+    <nav class="menu-container">
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+        </label>
+
+        <div class="menu-side">
+            <div class="menu-content">
+                <span class="menu-label">RECIPES /</span>
+                <ul class="nav-links">
+                    <li>
+                        <a href="recipes/lasagna.html">01. Classic Lasagna</a>
+                    </li>
+                    <li>
+                        <a href="recipes/rice-and-chicken.html">02. Chicken & Rice</a>
+                    </li>
+                    <li>
+                        <a href="recipes/boiled-eggs.html">03. Perfect Boiled Eggs</a>
+                    </li>
+                    
+                    <li class="separator"></li>
+                    
+                    <li><a href="#" class="small-link">About / Sobre</a></li>
+                    <li><a href="#" class="small-link">Contact / Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="hero">
+        <div class="logo">ODIN</div>
+        <h1>ESSENTIAL</h1>
+        <p>The beauty of simple cooking.</p>
+    </main>
+
 </body>
 </html>

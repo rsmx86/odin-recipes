@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Playfair+Display:wght@400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    letter-spacing: 10px;
+    margin-bottom: 40px;
+    opacity: 0.8;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+    color: #888;
+    text-transform: uppercase;
+}
+
+/* HAMBURGUER UI */
+#menu-toggle { display: none; }
+
+.hamburger {
+    position: fixed;
+    top: 40px;
+    right: 40px;
+    z-index: 100;
+    cursor: pointer;
+    width: 30px;
+    height: 20px;
+}
+
+.hamburger span {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    margin-bottom: 8px;
+    transition: 0.3s;
+}
+
+/* MENU */
+.menu-side {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    background: #1a1a1a;
+    z-index: 90;
+    transition: 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    display: flex;
+    align-items: center;
+    padding: 80px;
+}
+
+#menu-toggle:checked ~ .menu-side { right: 0; }
+
+#menu-toggle:checked ~ .hamburger span:nth-child(1) { transform: translateY(5px) rotate(45deg); }
+#menu-toggle:checked ~ .hamburger span:nth-child(2) { transform: translateY(-4px) rotate(-45deg); }
+
+/* LINKS MENU */
+.menu-label {
+    font-size: 1rem;
+    letter-spacing: 4px;
+    color: #d3d2d2;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.nav-links { list-style: none; }
+
+.nav-links li { margin-bottom: 25px; }
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #888;
+    padding-left: 10px;
+}
+
+.small-link {
+    font-family: 'Inter', sans-serif !important;
+    font-size: 0.7rem !important;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.separator {
+    height: 1px;
+    background: #333;
+    margin: 40px 0;
+}
+
+@media (max-width: 600px) {
+    h1 { font-size: 2.2rem; }
+    .menu-side { width: 100%; max-width: none; }
+}
+
+
+/* recipes */
+
+/* Container Principal */
+.recipe-container {
+    max-width: 700px;
+    margin: 100px auto;
+    padding: 0 30px;
+}
+
+/* Cabeçalho da Receita */
+.recipe-header {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.recipe-category {
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #666;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.recipe-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.recipe-meta {
+    font-size: 0.7rem;
+    color: #888;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Conteúdo (Ingredientes e Preparo) */
+.recipe-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #fff;
+    margin: 50px 0 30px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+}
+
+.ingredients ul {
+    list-style: none;
+}
+
+.ingredients li {
+    padding: 15px 0;
+    border-bottom: 1px solid #1a1a1a;
+    color: #bbb;
+    font-weight: 300;
+    font-size: 0.95rem;
+}
+
+/* Instruções */
+.instructions ol {
+    list-style: none;
+}
+
+.instructions li {
+    margin-bottom: 40px;
+    color: #bbb;
+    line-height: 1.8;
+}
+
+.step-num {
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    color: #fff;
+    margin-bottom: 10px;
+    opacity: 0.6;
+}
+
+/* Rodapé das Receitas */
+.recipe-footer {
+    margin-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.btn-back {
+    text-decoration: none;
+    color: #666;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    transition: 0.3s;
+}
+
+.btn-back:hover {
+    color: #fff;
+}
